@@ -1,12 +1,11 @@
 @import '../util/index';
 // Helper Classes
-.container {
+.wrapper {
     // Centering Contents
     margin: 0 auto;
     // Mobile Design
     padding: 0 rem(20);
-    // Desktop Design
-    @include breakpoint(large) {
-        // width: rem(1285);
-    }
+    // Display
+    display: grid;
+    grid-gap: rem(40);
 }
