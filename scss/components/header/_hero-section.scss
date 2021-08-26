@@ -2,17 +2,64 @@
     // Header
     &__hero-section {
         // Section
+        // Positioning
+        padding-top: rem(150);
+        // Font Settings
+        text-align: center;
+        // Display
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(40);
+        // Child Elements
         &__heading {
             // H1
+            // Sizing
+            width: 90%;
+            // Font Settings
+            font-size: rem(40);
+            @include breakpoint(medium) {
+                font-size: rem(50);
+            }
         }
         &__description {
             // P
+            // Sizing
+            width: 80%;
+            // Font Settings
+            font-size: rem(16);
+            @include breakpoint(medium) {
+                font-size: rem(20);
+            }
         }
         &__get-started-btn {
             // a
+            // Positioning
+            padding: rem(10) rem(40);
+            @include breakpoint(medium) {
+                // Positioning
+                padding: rem(15) rem(60);
+            }
+            // Background
+            background-color: $pink;
+            border-radius: 50px;
+            // Font Settings
+            color: white;
+            font-size: rem(16);
+            @include breakpoint(medium) {
+                font-size: rem(20);
+            }
         }
         &__hero-image {
             // Img
+            // Sizing
+            width: 100%;
+            // Positioning
+            padding-inline: calc(2.3vw + 1rem);
+            @include breakpoint(medium) {
+                // Positioning
+                padding-inline: rem(120);
+            }
         }
         &__social-stats {
             // Div

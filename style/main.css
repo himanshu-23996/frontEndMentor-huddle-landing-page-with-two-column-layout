@@ -135,3 +135,72 @@ button {
     line-height: 1.6rem;
   }
 }
+
+.header__hero-section {
+  padding-top: 9.375rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.header__hero-section__heading {
+  width: 90%;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 40em) {
+  .header__hero-section__heading {
+    font-size: 3.125rem;
+  }
+}
+
+.header__hero-section__description {
+  width: 80%;
+  font-size: 1rem;
+}
+
+@media (min-width: 40em) {
+  .header__hero-section__description {
+    font-size: 1.25rem;
+  }
+}
+
+.header__hero-section__get-started-btn {
+  padding: 0.625rem 2.5rem;
+  background-color: #ff52bf;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 40em) {
+  .header__hero-section__get-started-btn {
+    padding: 0.9375rem 3.75rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .header__hero-section__get-started-btn {
+    font-size: 1.25rem;
+  }
+}
+
+.header__hero-section__hero-image {
+  width: 100%;
+  padding-inline: calc(2.3vw + 1rem);
+}
+
+@media (min-width: 40em) {
+  .header__hero-section__hero-image {
+    padding-inline: 7.5rem;
+  }
+}
