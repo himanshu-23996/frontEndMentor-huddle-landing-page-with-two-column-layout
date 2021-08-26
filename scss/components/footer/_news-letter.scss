@@ -1,7 +1,30 @@
 .footer {
     // Footer
+    // Background
+    background-color: $very-dark-cyan;
+    // Display
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(80);
+    @include breakpoint(medium) {
+        // Display
+        flex-direction: row-reverse;
+        gap: rem(80);
+        justify-content: space-between;
+    }
+    // Positioning
+    @include breakpoint(medium) {
+        padding-block: rem(100);
+        padding-inline: rem(100);
+    }
+    // Font Settings
+    color: white;
+    // Child Elements
     &__news-letter {
         // Section
+        // Sizing
+        max-width: 500px;
         // Display
         display: flex;
         flex-direction: column;
@@ -12,6 +35,9 @@
             // H3
             // Font Settings
             font-family: $font-headings-poppins;
+            @include breakpoint(medium) {
+                font-size: 2rem;
+            }
         }
         &__description {
             // P
@@ -27,11 +53,18 @@
             flex-direction: column;
             align-items: flex-end;
             gap: rem(10);
+            @include breakpoint(large) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
             // Child Elements
             &__input {
                 // Input
                 // Sizing
                 width: 80%;
+                @include breakpoint(medium) {
+                    width: none;
+                }
                 // Positioning
                 padding: 0.5rem 2rem;
                 // Background

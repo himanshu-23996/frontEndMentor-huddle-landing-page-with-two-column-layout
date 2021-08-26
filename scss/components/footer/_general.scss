@@ -1,18 +1,11 @@
 .footer {
     // Footer
-    // Background
-    background-color: $very-dark-cyan;
-    // Display
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: rem(80);
-    // Font Settings
-    color: white;
-    // Child Elements
     &__general {
+        // Sizing
+        max-width: 250px;
         // Section
         // Display
+        // flex: 1 0.5 150px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

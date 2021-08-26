@@ -470,7 +470,44 @@ button {
           box-shadow: 5px 5px 8px 0 rgba(116, 116, 116, 0.205), -5px 5px 8px 0 rgba(116, 116, 116, 0.205);
 }
 
+.footer {
+  background-color: #00252e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5rem;
+  color: white;
+}
+
+@media (min-width: 40em) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 40em) {
+  .footer {
+    padding-block: 6.25rem;
+    padding-inline: 6.25rem;
+  }
+}
+
 .footer__news-letter {
+  max-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,6 +523,12 @@ button {
 
 .footer__news-letter__title {
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 40em) {
+  .footer__news-letter__title {
+    font-size: 2rem;
+  }
 }
 
 .footer__news-letter__subscription-form {
@@ -505,6 +548,18 @@ button {
   gap: 0.625rem;
 }
 
+@media (min-width: 71.875em) {
+  .footer__news-letter__subscription-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .footer__news-letter__subscription-form__input {
   width: 80%;
   padding: 0.5rem 2rem;
@@ -513,6 +568,12 @@ button {
   font-size: 1.2rem;
   color: black;
   font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 40em) {
+  .footer__news-letter__subscription-form__input {
+    width: none;
+  }
 }
 
 .footer__news-letter__subscription-form__submit {
@@ -531,23 +592,8 @@ button {
   background-color: #ff8fd8;
 }
 
-.footer {
-  background-color: #00252e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 5rem;
-  color: white;
-}
-
 .footer__general {
+  max-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
