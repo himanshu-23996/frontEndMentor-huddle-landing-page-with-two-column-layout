@@ -20,6 +20,28 @@
     }
     // Font Settings
     color: white;
+    // Curved Background
+    position: relative;
+    &::before {
+        background: url("/images/bg-footer-top-mobile.svg") center bottom no-repeat;
+        background-size: contain;
+        bottom: 100%;
+        left: 0;
+        content: '';
+        height: 100px;
+        position: absolute;
+        width: 100%;
+        @include breakpoint(medium) {
+            background: url("/images/bg-footer-top-desktop.svg") center bottom no-repeat;
+            background-size: contain;
+            bottom: 100%;
+            left: 0;
+            content: '';
+            height: 200px;
+            position: absolute;
+            width: 100%;
+        }
+    }
     // Child Elements
     &__news-letter {
         // Section
