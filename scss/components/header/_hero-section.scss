@@ -1,75 +1,172 @@
-.header {
-    // Header
-    &__hero-section {
-        // Section
-        // Positioning
-        padding-top: rem(150);
-        // Font Settings
-        text-align: center;
-        // Display
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: rem(40);
-        // Child Elements
-        &__heading {
-            // H1
-            // Sizing
-            width: 90%;
-            // Font Settings
-            font-size: rem(40);
-            @include breakpoint(medium) {
-                font-size: rem(50);
-            }
-        }
-        &__description {
-            // P
-            // Sizing
-            width: 80%;
-            // Font Settings
-            font-size: rem(16);
-            @include breakpoint(medium) {
-                font-size: rem(20);
-            }
-        }
-        &__get-started-btn {
-            // a
+    .header {
+        // Header
+        &__hero-section {
+            // Section
             // Positioning
-            padding: rem(10) rem(40);
-            @include breakpoint(medium) {
-                // Positioning
-                padding: rem(15) rem(60);
-            }
-            // Background
-            background-color: $pink;
-            border-radius: 50px;
+            padding-top: rem(150);
             // Font Settings
-            color: white;
-            font-size: rem(16);
-            @include breakpoint(medium) {
-                font-size: rem(20);
+            text-align: center;
+            // Display
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: rem(40);
+            // Child Elements
+            &__heading {
+                // H1
+                // Sizing
+                width: 90%;
+                // Font Settings
+                font-size: rem(40);
+                @include breakpoint(medium) {
+                    font-size: rem(50);
+                }
             }
-        }
-        &__hero-image {
-            // Img
-            // Sizing
-            width: 100%;
-            // Positioning
-            padding-inline: calc(2.3vw + 1rem);
-            @include breakpoint(medium) {
+            &__description {
+                // P
+                // Sizing
+                width: 80%;
+                // Font Settings
+                font-size: rem(16);
+                @include breakpoint(medium) {
+                    font-size: rem(20);
+                }
+            }
+            &__get-started-btn {
+                // a
+                // Background
+                background-color: $pink;
+                border-radius: 50px;
                 // Positioning
-                padding-inline: rem(120);
+                padding: rem(10) rem(40);
+                @include breakpoint(medium) {
+                    // Positioning
+                    padding: rem(15) rem(60);
+                }
+                // Font Settings
+                color: white;
+                font-size: rem(16);
+                @include breakpoint(medium) {
+                    font-size: rem(20);
+                }
+                // Hovering Effect
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    cursor: pointer;
+                    // Background
+                    background-color: $light-pink;
+                    // Shadow
+                    box-shadow: 5px 5px 8px 0 rgba(116, 116, 116, 0.205), -5px 5px 8px 0 rgba(116, 116, 116, 0.205);
+                }
             }
-        }
-        &__social-stats {
-            // Div
-            &__stat {
+            &__hero-image {
+                // Unable to get image fluidity at breakpoint medium
+                // Img
+                // Sizing
+                width: 100%;
+                aspect-ratio: 1015/720;
+                // Positioning
+                padding-block: rem(80);
+                padding-inline: calc(2.3vw + 1rem);
+                @include breakpoint(medium) {
+                    // Positioning
+                    padding-inline: max(rem(120));
+                }
+            }
+            &__social-stats {
                 // Div
-                &__title {
-                    // Use Pseudo class selectors here
-                    // H2
+                // Positioning
+                padding-bottom: rem(50);
+                @include breakpoint(medium) {
+                    padding-bottom: rem(150);
+                } // Child Elements
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: rem(100);
+                @include breakpoint(medium) {
+                    flex-direction: row;
+                    gap: rem(200);
+                }
+                // Child Elements
+                &__stat {
+                    // Div
+                    &__title {
+                        // Sizing
+                        width: fit-content;
+                        height: fit-content;
+                        // Positioning
+                        position: relative;
+                        // Display
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        // Font Settings
+                        font-size: clamp(3rem, calc(4.5vw + 2rem), 7rem);
+                    }
+                }
+                .communities {
+                    position: relative;
+                    &::before {
+                        content: url(/images/icon-communities.svg);
+                        // Sizing
+                        width: fit-content;
+                        // Positioning
+                        position: absolute;
+                        align-self: flex-start;
+                        top: -50px;
+                        @include breakpoint(medium) {
+                            top: -80px;
+                        }
+                        @include breakpoint(large) {
+                            top: -100px;
+                        }
+                    }
+                    &::after {
+                        content: "Communities Formed";
+                        // Sizing
+                        width: 150%;
+                        // Positioning
+                        align-self: center;
+                        bottom: -20px;
+                        position: absolute;
+                        // Font Settings
+                        font-size: 1rem;
+                        color: $very-dark-cyan;
+                        font-weight: none;
+                    }
+                }
+                .messages {
+                    position: relative;
+                    &::before {
+                        content: url(/images/icon-messages.svg);
+                        // Sizing
+                        width: fit-content;
+                        // Positioning
+                        position: absolute;
+                        align-self: flex-start;
+                        top: -50px;
+                        @include breakpoint(medium) {
+                            top: -80px
+                        }
+                        @include breakpoint(large) {
+                            top: -100px;
+                        }
+                    }
+                    &::after {
+                        content: "Messages Sent";
+                        // Sizing
+                        width: 150%;
+                        // Positioning
+                        align-self: center;
+                        bottom: -20px;
+                        position: absolute;
+                        // Font Settings
+                        font-size: 1rem;
+                        color: $very-dark-cyan;
+                        font-weight: none;
+                    }
                 }
             }
         }
     }
-}
