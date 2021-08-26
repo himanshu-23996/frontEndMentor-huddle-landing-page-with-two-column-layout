@@ -26,11 +26,11 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header wrapper">
         <section class="header__top-bar">
             <!-- Both Components Have almost the same Size -->
             <a class="header__top-bar__logo-link">
-                <img class="header__top-bar__logo-link__image" />
+                <img class="header__top-bar__logo-link__image" src="./images/logo.svg" alt="Company Logo" />
             </a>
             <a class="header__top-bar__button-link">
                 <div class="header__top-bar__button-link__button">
@@ -48,7 +48,7 @@
             <a class="header__hero-section__get-started-btn">
                 Get Started For Free
             </a>
-            <img class="header__hero-section__hero-image" />
+            <img class="header__hero-section__hero-image" src="./images/screen-mockups.svg" alt="Hero Image" />
             <div class="header__hero-section__social-stats">
                 <!-- Use Pseudo Class Selectors for the stats -->
                 <div class="header__hero-section__social-stats__stat communities">
@@ -64,9 +64,9 @@
             </div>
         </section>
     </header>
-    <main class="main">
+    <main class="main wrapper">
         <section class="main__sub-section grow-together">
-            <img class="main__sub-section__image" />
+            <img class="main__sub-section__image" src="./images/illustration-grow-together.svg" alt="Illustration Grow Together" />
             <h3 class="main__sub-section__title">
                 Grow Together
             </h3>
@@ -75,7 +75,7 @@
             </p>
         </section>
         <section class="main__sub-section flowing-conversations">
-            <img class="main__sub-section__image" />
+            <img class="main__sub-section__image" src="./images/illustration-flowing-conversation.svg" alt="Illustration Flowing Conversations" />
             <h3 class="main__sub-section__title">
                 Flowing Conversations
             </h3>
@@ -84,7 +84,7 @@
             </p>
         </section>
         <section class="main__sub-section your-users">
-            <img class="main__sub-section__image" />
+            <img class="main__sub-section__image" src="./images/illustration-your-users.svg" alt="Illustration Your Users" />
             <h3 class="main__sub-section__title">
                 Your Users
             </h3>
@@ -103,7 +103,7 @@
             </a>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer wrapper">
         <section class="footer__news-letter">
             <h3 class="footer__news-letter__title">
                 Newsletter
@@ -119,28 +119,46 @@
             </form>
         </section>
         <section class="footer__general">
-            <img class="footer__general__logo">
+            <img class="footer__general__logo" src="./images/logo.svg" alt="Footer Logo" />
             <p class="footer__general__description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
             </p>
             <div class="footer__general__contacts">
                 <div class="footer__general__contacts__phone">
                     <img class="footer__general__contacts__phone__icon">
-                    <span class="footer__general__contacts__phone__icon">
+                    <span class="footer__general__contacts__phone__text">
                         Phone: +1-543-123-4567
                     </span>
                 </div>
                 <div class="footer__general__contacts__email">
                     <img class="footer__general__contacts__email__icon">
-                    <span class="footer__general__contacts__email__icon">
+                    <span class="footer__general__contacts__email__text">
                         example@huddle.com
                     </span>
                 </div>
             </div>
-            <div class="footer__general__social-links">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter-square"></i>
+            <div class="footer__general__social">
+                <a class="footer__general__social__link fb" href="#">
+                    <i class="fab fa-facebook-square">
+                        <span hidden>
+                            Facebook
+                        </span>
+                    </i>
+                </a>
+                <a class="footer__general__social__link insta" href="#">
+                    <i class="fab fa-instagram">
+                        <span hidden>
+                            Instagram
+                        </span>
+                    </i>
+                </a>
+                <a class="footer__general__social__link twt" href="#">
+                    <i class="fab fa-twitter-square">
+                        <span hidden>
+                            Twitter
+                        </span>
+                    </i>
+                </a>
             </div>
         </section>
     </footer>

@@ -1,0 +1,31 @@
+.footer {
+    // Footer
+    &__general {
+        // Section
+        &__logo {
+            // Img
+        }
+        &__description {
+            // P
+        }
+        &__contacts {
+            // Div
+            &__phone,
+            &__email {
+                // Div
+                &__icon {
+                    // Img
+                }
+                &__text {
+                    // Span
+                }
+            }
+        }
+        &__social {
+            // Div
+            &__link {
+                // a
+            }
+        }
+    }
+}

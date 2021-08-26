@@ -1,0 +1,28 @@
+.header {
+    // Header
+    &__hero-section {
+        // Section
+        &__heading {
+            // H1
+        }
+        &__description {
+            // P
+        }
+        &__get-started-btn {
+            // a
+        }
+        &__hero-image {
+            // Img
+        }
+        &__social-stats {
+            // Div
+            &__stat {
+                // Div
+                &__title {
+                    // Use Pseudo class selectors here
+                    // H2
+                }
+            }
+        }
+    }
+}
