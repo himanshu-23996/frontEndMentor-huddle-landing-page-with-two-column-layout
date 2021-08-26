@@ -1,15 +1,68 @@
 .main {
+    padding-inline: unset;
     // Main
     &__sub-section {
         // Section
+        // Font Settings
+        text-align: center;
+        @include breakpoint(medium) {
+            // Font Settings
+            text-align: left;
+        }
+        // Display
+        @include breakpoint(medium) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: calc(8vw + 1.5rem);
+        }
+        // Positioning
+        padding-inline: calc(4vw + 2rem);
+        // Child Elements
         &__image {
             // Img
+            // Sizing
+            width: 90%;
+            @include breakpoint(medium) {
+                // Sizing
+                width: 50%;
+                height: 100%;
+            }
+            // Positioning
+            padding-block: rem(100);
         }
-        &__title {
-            // H3
+        &__text {
+            // Article
+            &__title {
+                // H3
+                // Font Settings
+                font-size: 1.5rem;
+            }
+            &__description {
+                // P
+                // Positioning
+                padding-block: rem(20);
+                // Font Settings
+                font-size: 1rem;
+            }
         }
-        &__description {
-            // P
+    }
+    .grow-together {
+        // Background
+        background-color: $very-pale-blue;
+        // Display
+        @include breakpoint(medium) {
+            flex-direction: row-reverse;
+        }
+    }
+    .flowing-conversations {}
+    .your-users {
+        // Background
+        background-color: $very-pale-blue;
+        // Display
+        @include breakpoint(medium) {
+            flex-direction: row-reverse;
         }
     }
 }

@@ -1,14 +1,42 @@
 .main {
     // Main
-    &__sub-section {
+    .sign-up {
         // Section
+        // Positioning
+        padding-top: rem(50);
+        padding-bottom: rem(100);
+        // Dispaly
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(40);
+        // Child Elemnets
         &__heading {
             // H2
+            // Font Settings
+            font-size: 1.5rem;
         }
         &__link {
             // a
-            &__btn {
-                // Div
+            // Background Color
+            background-color: $pink;
+            // Border
+            border-radius: 50px;
+            // Positioning
+            padding-block: 1rem;
+            padding-inline: 2.5rem;
+            // Font Settings
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            // Hovering Effect
+            transition: all ease-in-out 300ms;
+            &:hover {
+                cursor: pointer;
+                // Background
+                background-color: $light-pink;
+                // Shadow
+                box-shadow: 5px 5px 8px 0 rgba(116, 116, 116, 0.205), -5px 5px 8px 0 rgba(116, 116, 116, 0.205);
             }
         }
     }
