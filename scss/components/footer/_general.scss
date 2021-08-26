@@ -6,23 +6,46 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: rem(50);
+    gap: rem(80);
     // Font Settings
     color: white;
     // Child Elements
     &__general {
         // Section
+        // Display
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // Child Elements
         &__logo {
             // Img
+            // Positioing
+            padding-bottom: rem(20);
         }
         &__description {
             // P
+            // Positioing
+            padding-bottom: rem(40);
+            // Font Settings
+            line-height: 1.5rem;
         }
         &__contacts {
             // Div
+            // Positioing
+            padding-bottom: rem(40);
+            // Display
+            display: flex;
+            gap: rem(20);
+            flex-direction: column;
+            // Child Elements
             &__phone,
             &__email {
                 // Div
+                // Display
+                display: flex;
+                gap: rem(20);
+                text-align: center;
+                // Child Elements
                 &__icon {
                     // Img
                 }
@@ -33,8 +56,29 @@
         }
         &__social {
             // Div
+            // Positioing
+            padding-bottom: rem(10);
+            // Display
+            display: flex;
+            gap: rem(20);
+            text-align: center;
+            // Font Settings
+            font-size: 2rem;
             &__link {
                 // a
+                // Child Elements
+                i {
+                    // Hovering
+                    transition: all ease-in-out 300ms;
+                }
+                // Hovering
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    cursor: pointer;
+                    i {
+                        color: $blue-hover;
+                    }
+                }
             }
         }
     }

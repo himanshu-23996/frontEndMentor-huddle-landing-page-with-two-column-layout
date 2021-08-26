@@ -543,6 +543,76 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 3.125rem;
+  gap: 5rem;
   color: white;
+}
+
+.footer__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__general__logo {
+  padding-bottom: 1.25rem;
+}
+
+.footer__general__description {
+  padding-bottom: 2.5rem;
+  line-height: 1.5rem;
+}
+
+.footer__general__contacts {
+  padding-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__general__contacts__phone, .footer__general__contacts__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.footer__general__social {
+  padding-bottom: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.25rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer__general__social__link {
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.footer__general__social__link i {
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.footer__general__social__link:hover {
+  cursor: pointer;
+}
+
+.footer__general__social__link:hover i {
+  color: #85c2ff;
 }
