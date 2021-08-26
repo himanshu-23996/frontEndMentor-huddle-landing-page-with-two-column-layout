@@ -67,7 +67,8 @@
                 aspect-ratio: 1015/720;
                 // Positioning
                 padding-block: rem(80);
-                padding-inline: calc(2.3vw + 1rem);
+                padding-inline: calc(2.5vw + 1rem);
+                left: 0;
                 @include breakpoint(medium) {
                     // Positioning
                     padding-inline: max(rem(120));

@@ -2,19 +2,66 @@
     // Footer
     &__news-letter {
         // Section
+        // Display
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(30);
+        // Child Elements
         &__title {
             // H3
+            // Font Settings
+            font-family: $font-headings-poppins;
         }
         &__description {
             // P
         }
         &__subscription-form {
             // Form
+            // Sizing
+            width: 100%;
+            // Positioning
+            align-self: flex-end;
+            // Display
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: rem(10);
+            // Child Elements
             &__input {
                 // Input
+                // Sizing
+                width: 80%;
+                // Positioning
+                padding: 0.5rem 2rem;
+                // Background
+                background-color: white;
+                // Border
+                border-radius: 5px;
+                // Font Settings
+                font-size: 1.2rem;
+                color: black;
+                font-family: $font-headings-poppins;
             }
             &__submit {
                 // Button
+                // Background
+                background-color: $pink;
+                // Border
+                border-radius: 5px;
+                // Positioning
+                padding: 0.5rem 2rem;
+                // Font Settings
+                font-size: 1.2rem;
+                color: white;
+                font-family: $font-headings-poppins;
+                // Hovering Effect
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    cursor: pointer;
+                    // Background
+                    background-color: $light-pink;
+                }
             }
         }
     }

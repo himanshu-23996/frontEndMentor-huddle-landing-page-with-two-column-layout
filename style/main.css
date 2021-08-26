@@ -207,7 +207,8 @@ button {
   width: 100%;
   aspect-ratio: 1015/720;
   padding-block: 5rem;
-  padding-inline: calc(2.3vw + 1rem);
+  padding-inline: calc(2.5vw + 1rem);
+  left: 0;
 }
 
 @media (min-width: 40em) {
@@ -355,6 +356,7 @@ button {
 .main__sub-section {
   text-align: center;
   padding-inline: calc(4vw + 2rem);
+  padding-block: 3.125rem;
 }
 
 @media (min-width: 40em) {
@@ -466,4 +468,81 @@ button {
   background-color: #ff8fd8;
   -webkit-box-shadow: 5px 5px 8px 0 rgba(116, 116, 116, 0.205), -5px 5px 8px 0 rgba(116, 116, 116, 0.205);
           box-shadow: 5px 5px 8px 0 rgba(116, 116, 116, 0.205), -5px 5px 8px 0 rgba(116, 116, 116, 0.205);
+}
+
+.footer__news-letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.875rem;
+}
+
+.footer__news-letter__title {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__news-letter__subscription-form {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 0.625rem;
+}
+
+.footer__news-letter__subscription-form__input {
+  width: 80%;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__news-letter__subscription-form__submit {
+  background-color: #ff52bf;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.footer__news-letter__subscription-form__submit:hover {
+  cursor: pointer;
+  background-color: #ff8fd8;
+}
+
+.footer {
+  background-color: #00252e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3.125rem;
+  color: white;
 }
