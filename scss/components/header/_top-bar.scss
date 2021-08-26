@@ -2,16 +2,79 @@
     // Header
     &__top-bar {
         // Section
+        // Display
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // Child classes
         &__logo-link {
             // a
+            // Sizing
+            width: 150px;
+            @include breakpoint(medium) {
+                width: unset;
+            }
+            // Hoverin Effects
+            &:hover {
+                cursor: pointer;
+            }
+            // Child Classes
             &__image {
                 // Img
+                // Sizing
+                width: inherit;
             }
         }
         &__button-link {
             // a
+            // Sizing
+            width: 90px;
+            height: 25px;
+            @include breakpoint(medium) {
+                // Sizing
+                width: 120px;
+                height: 30px;
+            }
+            // Positioning
+            padding-block: 0.1rem;
+            padding-inline: 0.8rem;
+            @include breakpoint(medium) {
+                // Positioning
+                padding-block: 0.5rem;
+                padding-inline: 1.2rem;
+            }
+            // Font Settings
+            color: $pink;
+            text-align: center;
+            border: 1px solid $pink;
+            border-radius: 50px;
+            // Hover Effects
+            transition: all ease-in-out 300ms;
+            &:hover {
+                cursor: pointer;
+                // Font Settings
+                color: $light-pink;
+                // Border Settings
+                border: 1px solid $light-pink;
+                box-shadow: 0.5px 0.5px 1px 0 $hover-light-pink, -0.5px -0.5px 1px 0 $hover-light-pink;
+            }
+            // Centering Child
+            @include center-child-flex-row;
+            // Child Classes
             &__button {
                 // Div
+                // Sizing
+                height: inherit;
+                width: inherit;
+                // Font Settings
+                font-size: rem(17);
+                @include breakpoint(medium) {
+                    // Font Settings
+                    font-size: 1.5rem;
+                    line-height: 1.6rem;
+                }
+                // Border Settings
+                border-radius: 50px;
             }
         }
     }

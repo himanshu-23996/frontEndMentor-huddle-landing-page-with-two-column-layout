@@ -41,9 +41,97 @@ button {
 @use "sass:math";
 .wrapper {
   margin: 0 auto;
+  padding: 1.875rem 1.25rem;
   display: -ms-grid;
   display: grid;
   grid-gap: 2.5rem;
 }
 
 @use "sass:math";
+.header__top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top-bar__logo-link {
+  width: 150px;
+}
+
+@media (min-width: 40em) {
+  .header__top-bar__logo-link {
+    width: unset;
+  }
+}
+
+.header__top-bar__logo-link:hover {
+  cursor: pointer;
+}
+
+.header__top-bar__logo-link__image {
+  width: inherit;
+}
+
+.header__top-bar__button-link {
+  width: 90px;
+  height: 25px;
+  padding-block: 0.1rem;
+  padding-inline: 0.8rem;
+  color: #ff52bf;
+  text-align: center;
+  border: 1px solid #ff52bf;
+  border-radius: 50px;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 40em) {
+  .header__top-bar__button-link {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 40em) {
+  .header__top-bar__button-link {
+    padding-block: 0.5rem;
+    padding-inline: 1.2rem;
+  }
+}
+
+.header__top-bar__button-link:hover {
+  cursor: pointer;
+  color: #ff8fd8;
+  border: 1px solid #ff8fd8;
+  -webkit-box-shadow: 0.5px 0.5px 1px 0 rgba(250, 214, 237, 0.884), -0.5px -0.5px 1px 0 rgba(250, 214, 237, 0.884);
+          box-shadow: 0.5px 0.5px 1px 0 rgba(250, 214, 237, 0.884), -0.5px -0.5px 1px 0 rgba(250, 214, 237, 0.884);
+}
+
+.header__top-bar__button-link__button {
+  height: inherit;
+  width: inherit;
+  font-size: 1.0625rem;
+  border-radius: 50px;
+}
+
+@media (min-width: 40em) {
+  .header__top-bar__button-link__button {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}

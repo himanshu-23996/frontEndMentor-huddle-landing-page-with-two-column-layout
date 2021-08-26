@@ -4,3 +4,24 @@
 @function rem($pixels, $context: 16) {
     @return (($pixels/$context)) * 1rem;
 }
+
+@mixin center-child-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-child-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-child-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
